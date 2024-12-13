@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 
 export default function ForgotPasswordPage() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center px-4">
-      <div className="w-full max-w-[400px] space-y-6">
+    <div className="flex min-h-screen w-full flex-col items-center justify-center">
+      <div className="w-full space-y-6">
         <div className="flex flex-col items-center space-y-4">
           <Image
             src="/logo.svg"
@@ -35,7 +35,10 @@ export default function ForgotPasswordPage() {
             href="/auth/login"
             className="text-sm text-gray-600 hover:text-gray-900"
           >
-            Back to login
+            Back to{" "}
+            <span className="hover:text-brand underline underline-offset-4">
+              Login
+            </span>
           </Link>
         </div>
       </div>
