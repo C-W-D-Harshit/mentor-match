@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import { MaxWidthWrapper } from "./max-width-wrapper";
+import Image from "next/image";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,14 @@ export function Navbar() {
       <MaxWidthWrapper>
         <div className="flex h-14 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-xl font-bold">MentorMatch</span>
+            <Image
+              src="/logo.svg"
+              alt="MentorMatch Logo"
+              width={32}
+              height={32}
+              className="h-8 w-8"
+            />
+            <span className="text-xl font-bold">Mentor Match</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-6">
             <Link
@@ -47,10 +55,10 @@ export function Navbar() {
           </nav>
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="ghost" asChild>
-              <Link href="/login">Login</Link>
+              <Link href="/auth/login">Login</Link>
             </Button>
             <Button asChild>
-              <Link href="/signup">Get Started</Link>
+              <Link href="/auth/signup">Get Started</Link>
             </Button>
           </div>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -101,12 +109,12 @@ export function Navbar() {
                   asChild
                   className="justify-start w-full text-left"
                 >
-                  <Link href="/login" onClick={toggleMenu}>
+                  <Link href="/auth/login" onClick={toggleMenu}>
                     Login
                   </Link>
                 </Button>
                 <Button asChild className="justify-start w-full">
-                  <Link href="/signup" onClick={toggleMenu}>
+                  <Link href="/auth/signup" onClick={toggleMenu}>
                     Get Started
                   </Link>
                 </Button>
