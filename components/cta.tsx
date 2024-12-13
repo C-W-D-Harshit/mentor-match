@@ -15,7 +15,7 @@ export function CTA() {
             achieve your goals
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary">
+            <Button size="lg" variant="secondary" effect={"gooeyLeft"}>
               <Link href="/signup">Get Started Now</Link>
             </Button>
             <Button
