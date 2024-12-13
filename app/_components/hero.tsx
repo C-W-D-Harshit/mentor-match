@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { PlayCircle } from "lucide-react";
 import Link from "next/link";
-import { MaxWidthWrapper } from "./max-width-wrapper";
+import { MaxWidthWrapper } from "../../components/max-width-wrapper";
 
 export function Hero() {
   return (

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import { MaxWidthWrapper } from "./max-width-wrapper";
+import { MaxWidthWrapper } from "../../components/max-width-wrapper";
 import Image from "next/image";
 
 export function Navbar() {

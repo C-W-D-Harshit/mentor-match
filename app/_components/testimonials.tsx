@@ -1,7 +1,7 @@
-import { Card, CardContent, CardHeader } from "@/components/ui/card"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Badge } from "@/components/ui/badge"
-import { MaxWidthWrapper } from "./max-width-wrapper"
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Badge } from "@/components/ui/badge";
+import { MaxWidthWrapper } from "../../components/max-width-wrapper";
 
 const testimonials = [
   {
@@ -20,14 +20,16 @@ const testimonials = [
     text: "Finding a product management mentor was crucial for my transition into PM. The platform made it easy to connect with experienced professionals who provided invaluable guidance.",
     expertise: ["Product Strategy", "Agile"],
   },
-]
+];
 
 export function Testimonials() {
   return (
     <section className="py-20 bg-white" id="testimonials">
       <MaxWidthWrapper>
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Success Stories</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+            Success Stories
+          </h2>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
             Hear from professionals who found their perfect mentor match
           </p>
@@ -38,7 +40,10 @@ export function Testimonials() {
               <CardHeader className="space-y-4">
                 <div className="flex items-center space-x-4">
                   <Avatar className="h-12 w-12">
-                    <AvatarImage src={testimonial.image} alt={testimonial.name} />
+                    <AvatarImage
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                    />
                     <AvatarFallback>{testimonial.name[0]}</AvatarFallback>
                   </Avatar>
                   <div>
@@ -64,6 +69,5 @@ export function Testimonials() {
         </div>
       </MaxWidthWrapper>
     </section>
-  )
+  );
 }
-

@@ -1,40 +1,40 @@
-'use client'
+"use client";
 
-import { useEffect, useRef } from 'react'
-import Image from 'next/image'
-import { MaxWidthWrapper } from "./max-width-wrapper"
+import { useEffect, useRef } from "react";
+import Image from "next/image";
+import { MaxWidthWrapper } from "../../components/max-width-wrapper";
 
 const logos = [
-  { name: 'Company 1', src: '/placeholder.svg' },
-  { name: 'Company 2', src: '/placeholder.svg' },
-  { name: 'Company 3', src: '/placeholder.svg' },
-  { name: 'Company 4', src: '/placeholder.svg' },
-  { name: 'Company 5', src: '/placeholder.svg' },
-  { name: 'Company 6', src: '/placeholder.svg' },
-]
+  { name: "Company 1", src: "/placeholder.svg" },
+  { name: "Company 2", src: "/placeholder.svg" },
+  { name: "Company 3", src: "/placeholder.svg" },
+  { name: "Company 4", src: "/placeholder.svg" },
+  { name: "Company 5", src: "/placeholder.svg" },
+  { name: "Company 6", src: "/placeholder.svg" },
+];
 
 export function SocialProof() {
-  const scrollRef = useRef<HTMLDivElement>(null)
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const scrollContainer = scrollRef.current
-    if (!scrollContainer) return
+    const scrollContainer = scrollRef.current;
+    if (!scrollContainer) return;
 
-    const scrollWidth = scrollContainer.scrollWidth
-    const clientWidth = scrollContainer.clientWidth
+    const scrollWidth = scrollContainer.scrollWidth;
+    const clientWidth = scrollContainer.clientWidth;
 
-    let scrollPos = 0
+    let scrollPos = 0;
     const scroll = () => {
-      scrollPos += 1
+      scrollPos += 1;
       if (scrollPos >= scrollWidth / 2) {
-        scrollPos = 0
+        scrollPos = 0;
       }
-      scrollContainer.scrollLeft = scrollPos
-    }
+      scrollContainer.scrollLeft = scrollPos;
+    };
 
-    const interval = setInterval(scroll, 30)
-    return () => clearInterval(interval)
-  }, [])
+    const interval = setInterval(scroll, 30);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className="py-12 bg-gray-50">
@@ -44,7 +44,7 @@ export function SocialProof() {
         </h2>
       </MaxWidthWrapper>
       <div className="w-full overflow-hidden">
-        <div 
+        <div
           ref={scrollRef}
           className="flex gap-8 py-4 overflow-hidden whitespace-nowrap"
         >
@@ -86,6 +86,5 @@ export function SocialProof() {
         </p>
       </MaxWidthWrapper>
     </section>
-  )
+  );
 }
-
