@@ -17,6 +17,12 @@ export const metadata: Metadata = {
   title: "Mentor Match - Find Your Perfect Mentor",
   description:
     "Connect with experienced mentors who can guide you on your professional journey. Mentor Match helps you find the perfect mentor to achieve your career goals.",
+  icons: [
+    {
+      rel: "icon",
+      url: "/logo.svg",
+    },
+  ],
 };
 
 export default function RootLayout({
