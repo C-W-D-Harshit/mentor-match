@@ -37,7 +37,7 @@ export function HowItWorks() {
             How It Works
           </h2>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-            Get started with MentorMatch in four simple steps
+            Get started with Mentor-Match in four simple steps
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">

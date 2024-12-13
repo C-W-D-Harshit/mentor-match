@@ -35,7 +35,7 @@ export function Benefits() {
       <MaxWidthWrapper>
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Why Choose MentorMatch?
+            Why Choose Mentor-Match?
           </h2>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
             Discover the advantages of our mentorship platform and how it can

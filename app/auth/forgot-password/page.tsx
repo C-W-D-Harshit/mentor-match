@@ -4,8 +4,8 @@ import { Metadata } from "next";
 import { ForgotPasswordForm } from "./_components/form";
 
 export const metadata: Metadata = {
-  title: "Forgot Password - MentorMatch",
-  description: "Reset your MentorMatch account password",
+  title: "Forgot Password - Mentor-Match",
+  description: "Reset your Mentor-Match account password",
 };
 
 export default function ForgotPasswordPage() {
@@ -15,7 +15,7 @@ export default function ForgotPasswordPage() {
         <div className="flex flex-col items-center space-y-4">
           <Image
             src="/logo.svg"
-            alt="MentorMatch Logo"
+            alt="Mentor-Match Logo"
             width={32}
             height={32}
             className="h-8 w-8"

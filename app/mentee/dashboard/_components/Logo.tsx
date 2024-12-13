@@ -6,12 +6,12 @@ export default function Logo() {
     <Link href="/" className="flex items-center space-x-2">
       <Image
         src="/logo.svg"
-        alt="MentorMatch Logo"
+        alt="Mentor-Match Logo"
         width={32}
         height={32}
         priority
       />
-      <span className="text-xl font-bold">MentorMatch</span>
+      <span className="text-xl font-bold">Mentor-Match</span>
     </Link>
   );
 }

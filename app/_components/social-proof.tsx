@@ -82,7 +82,7 @@ export function SocialProof() {
       </div>
       <MaxWidthWrapper>
         <p className="text-sm text-muted-foreground text-center mt-8">
-          Join thousands of professionals already growing with MentorMatch
+          Join thousands of professionals already growing with Mentor-Match
         </p>
       </MaxWidthWrapper>
     </section>

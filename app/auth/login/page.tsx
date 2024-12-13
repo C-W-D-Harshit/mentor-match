@@ -4,8 +4,8 @@ import { Metadata } from "next";
 import { UserAuthForm } from "../_components/user-auth-form";
 
 export const metadata: Metadata = {
-  title: "Login - MentorMatch",
-  description: "Login to your MentorMatch account",
+  title: "Login - Mentor-Match",
+  description: "Login to your Mentor-Match account",
 };
 
 export default function LoginPage() {
@@ -15,7 +15,7 @@ export default function LoginPage() {
         <div className="flex flex-col space-y-2 text-center">
           <Image
             src="/logo.svg"
-            alt="MentorMatch Logo"
+            alt="Mentor-Match Logo"
             width={64}
             height={64}
             className="mx-auto"

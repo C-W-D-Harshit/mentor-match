@@ -11,7 +11,7 @@ export function CTA() {
             Ready to Accelerate Your Growth?
           </h2>
           <p className="mt-4 text-xl max-w-2xl mx-auto text-primary-foreground">
-            Join MentorMatch today and connect with mentors who can help you
+            Join Mentor-Match today and connect with mentors who can help you
             achieve your goals
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">

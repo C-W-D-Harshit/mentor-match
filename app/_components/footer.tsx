@@ -8,7 +8,7 @@ export function Footer() {
       <MaxWidthWrapper>
         <div className="py-12 md:py-16 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
-            <h3 className="text-lg font-bold">MentorMatch</h3>
+            <h3 className="text-lg font-bold">Mentor-Match</h3>
             <p className="text-sm text-muted-foreground">
               Connecting ambitious professionals with experienced mentors
             </p>
@@ -113,7 +113,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t py-6 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} MentorMatch. All rights reserved.
+          © {new Date().getFullYear()} Mentor-Match. All rights reserved.
         </div>
       </MaxWidthWrapper>
     </footer>

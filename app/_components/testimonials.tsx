@@ -9,7 +9,7 @@ const testimonials = [
     role: "Software Engineer",
     company: "Tech Corp",
     image: "/placeholder.svg",
-    text: "MentorMatch connected me with an amazing senior developer who helped me level up my coding skills. The structured approach and regular feedback made a huge difference in my career.",
+    text: "Mentor-Match connected me with an amazing senior developer who helped me level up my coding skills. The structured approach and regular feedback made a huge difference in my career.",
     expertise: ["React", "Node.js"],
   },
   {

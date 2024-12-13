@@ -20,7 +20,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center space-x-2">
             <Image
               src="/logo.svg"
-              alt="MentorMatch Logo"
+              alt="Mentor-Match Logo"
               width={32}
               height={32}
               className="h-8 w-8"
@@ -73,7 +73,7 @@ export function Navbar() {
               className="w-[300px] sm:w-[400px] bg-white"
             >
               <div className="mb-8">
-                <h2 className="text-2xl font-bold">MentorMatch</h2>
+                <h2 className="text-2xl font-bold">Mentor-Match</h2>
               </div>
               <nav className="flex flex-col space-y-6 mt-8">
                 <Link
