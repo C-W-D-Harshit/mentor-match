@@ -1,16 +1,16 @@
-'use client'
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu } from 'lucide-react'
-import { MaxWidthWrapper } from "./max-width-wrapper"
+import { useState } from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
+import { MaxWidthWrapper } from "./max-width-wrapper";
 
 export function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen)
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -20,16 +20,28 @@ export function Navbar() {
             <span className="text-xl font-bold">MentorMatch</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-6">
-            <Link href="#how-it-works" className="text-sm font-medium hover:text-primary">
+            <Link
+              href="#how-it-works"
+              className="text-sm font-medium hover:text-primary"
+            >
               How it Works
             </Link>
-            <Link href="#benefits" className="text-sm font-medium hover:text-primary">
+            <Link
+              href="#benefits"
+              className="text-sm font-medium hover:text-primary"
+            >
               Benefits
             </Link>
-            <Link href="#testimonials" className="text-sm font-medium hover:text-primary">
+            <Link
+              href="#testimonials"
+              className="text-sm font-medium hover:text-primary"
+            >
               Success Stories
             </Link>
-            <Link href="#faq" className="text-sm font-medium hover:text-primary">
+            <Link
+              href="#faq"
+              className="text-sm font-medium hover:text-primary"
+            >
               FAQ
             </Link>
           </nav>
@@ -48,25 +60,55 @@ export function Navbar() {
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-              <nav className="flex flex-col space-y-4 mt-4">
-                <Link href="#how-it-works" className="text-sm font-medium hover:text-primary" onClick={toggleMenu}>
+            <SheetContent
+              side="right"
+              className="w-[300px] sm:w-[400px] bg-white"
+            >
+              <div className="mb-8">
+                <h2 className="text-2xl font-bold">MentorMatch</h2>
+              </div>
+              <nav className="flex flex-col space-y-6 mt-8">
+                <Link
+                  href="#how-it-works"
+                  className="text-base font-medium hover:text-primary transition-colors"
+                  onClick={toggleMenu}
+                >
                   How it Works
                 </Link>
-                <Link href="#benefits" className="text-sm font-medium hover:text-primary" onClick={toggleMenu}>
+                <Link
+                  href="#benefits"
+                  className="text-base font-medium hover:text-primary transition-colors"
+                  onClick={toggleMenu}
+                >
                   Benefits
                 </Link>
-                <Link href="#testimonials" className="text-sm font-medium hover:text-primary" onClick={toggleMenu}>
+                <Link
+                  href="#testimonials"
+                  className="text-base font-medium hover:text-primary transition-colors"
+                  onClick={toggleMenu}
+                >
                   Success Stories
                 </Link>
-                <Link href="#faq" className="text-sm font-medium hover:text-primary" onClick={toggleMenu}>
+                <Link
+                  href="#faq"
+                  className="text-base font-medium hover:text-primary transition-colors"
+                  onClick={toggleMenu}
+                >
                   FAQ
                 </Link>
-                <Button variant="ghost" asChild className="justify-start">
-                  <Link href="/login" onClick={toggleMenu}>Login</Link>
+                <Button
+                  variant="ghost"
+                  asChild
+                  className="justify-start w-full text-left"
+                >
+                  <Link href="/login" onClick={toggleMenu}>
+                    Login
+                  </Link>
                 </Button>
-                <Button asChild className="justify-start">
-                  <Link href="/signup" onClick={toggleMenu}>Get Started</Link>
+                <Button asChild className="justify-start w-full">
+                  <Link href="/signup" onClick={toggleMenu}>
+                    Get Started
+                  </Link>
                 </Button>
               </nav>
             </SheetContent>
@@ -74,6 +116,5 @@ export function Navbar() {
         </div>
       </MaxWidthWrapper>
     </header>
-  )
+  );
 }
-
