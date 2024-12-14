@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Bell, Home, Search, Users, User } from "lucide-react";
+import { Home, Search, Users, User } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import {
@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import Logo from "./Logo";
 import { MaxWidthWrapper } from "@/components/max-width-wrapper";
+import { NotificationDropdown } from "./NotificationDropdown";
 
 export default function Header() {
   return (
@@ -50,10 +51,7 @@ export default function Header() {
                 </nav>
               </div>
               <div className="flex items-center space-x-4">
-                <Button variant="ghost" size="icon" className="relative">
-                  <Bell className="h-5 w-5" />
-                  <span className="absolute top-0 right-0 h-2 w-2 bg-red-500 rounded-full"></span>
-                </Button>
+                <NotificationDropdown />
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
                     <Button
