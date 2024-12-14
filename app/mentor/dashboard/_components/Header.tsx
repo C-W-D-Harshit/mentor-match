@@ -51,19 +51,19 @@ export function Header() {
                   Dashboard
                 </Link>
                 <Link
-                  href="/mentor/discover"
+                  href="/mentor/dashboard/discover"
                   className="text-sm font-medium transition-colors hover:text-primary"
                 >
                   Discover
                 </Link>
                 <Link
-                  href="/mentor/my-mentees"
+                  href="/mentor/dashboard/my-mentees"
                   className="text-sm font-medium transition-colors hover:text-primary"
                 >
                   My Mentees
                 </Link>
                 <Link
-                  href="/mentor/connections"
+                  href="/mentor/dashboard/connections"
                   className="text-sm font-medium transition-colors hover:text-primary"
                 >
                   Connections
@@ -120,21 +120,21 @@ export function Header() {
             <span className="text-xs font-medium text-gray-600">Home</span>
           </Link>
           <Link
-            href="/mentor/discover"
+            href="/mentor/dashboard/discover"
             className="flex flex-col items-center space-y-1 p-2 rounded-md transition-colors duration-200 hover:bg-gray-100"
           >
             <Search className="h-6 w-6 text-gray-600" />
             <span className="text-xs font-medium text-gray-600">Discover</span>
           </Link>
           <Link
-            href="/mentor/my-mentees"
+            href="/mentor/dashboard/my-mentees"
             className="flex flex-col items-center space-y-1 p-2 rounded-md transition-colors duration-200 hover:bg-gray-100"
           >
             <Users className="h-6 w-6 text-gray-600" />
             <span className="text-xs font-medium text-gray-600">Mentees</span>
           </Link>
           <Link
-            href="/mentor/profile"
+            href="/mentor/dashboard/profile"
             className="flex flex-col items-center space-y-1 p-2 rounded-md transition-colors duration-200 hover:bg-gray-100"
           >
             <Avatar className="h-6 w-6">
